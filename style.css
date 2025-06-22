@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #85a448;
+  padding: 10px 20px;
+}
+
+.navbar .logo {
+  height: 40px;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.promo img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.productos .grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 200px);
+  gap: 10px;
+  padding: 20px;
+}
+
+.caja {
+  background-color: white;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.caja img {
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.precio {
+  color: #85a448;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.producto-detalle {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.producto-detalle .img-grande {
+  max-width: 25%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.producto-detalle .info {
+  text-align: left;
+}
+
+.precio-compra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.precio-compra span {
+  font-size: 24px;
+  color: #85a448;
+}
+
+.precio-compra button {
+  padding: 10px 20px;
+  background-color: #85a448;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.carrito {
+  padding: 20px;
+}
+
+.contacto, .sobre {
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .productos .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 200px);
+  }
+
+  .producto-detalle {
+    flex-direction: column;
+  }
+}

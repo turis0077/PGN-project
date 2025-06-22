@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Producto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <img src="src/logo.png" alt="Logo" class="logo" />
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="sobre.html">Sobre Nosotros</a>
+      <a href="carrito.html" class="cart-icon">🛒</a>
+    </nav>
+  </header>
+
+  <main class="producto-detalle">
+    <img src="src/cable.png" alt="Producto" class="img-grande" />
+    <div class="info">
+      <h1>Cable USB tipo C</h1>
+      <p>Cable multiuso con entrada USB tipo C a USB, transmite información y soporta carga rápida.</p>
+      <div class="precio-compra">
+        <span>Q79.99</span>
+        <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
